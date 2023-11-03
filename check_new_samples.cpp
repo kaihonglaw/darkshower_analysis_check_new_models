@@ -36,9 +36,9 @@ void nano_analysis(){
 
  gStyle->SetOptStat(0); gStyle->SetTextFont(42);
 
- TCanvas* c1 = new TCanvas("", "", 800, 700);
- c1->SetLogy();
- h_muon_dxy_B1->DrawClone("hist");
+ //TCanvas* c1 = new TCanvas("", "", 800, 700);
+ //c1->SetLogy();
+ //h_muon_dxy_B1->DrawClone("hist");
 
  TCanvas* c2 = new TCanvas("", "", 800, 700);
  gen_d3d_reco_d3d->DrawClone("COLZ");
@@ -52,6 +52,7 @@ void nano_analysis(){
  TCanvas* c7 = new TCanvas("", "", 800, 700);
  gen_dxy_reco_dxy_SV->DrawClone("COLZ");
 
+ /*
  TChain *signal1 = new TChain();
  TChain *signal2 = new TChain();
  TChain *signal3 = new TChain();
@@ -144,6 +145,6 @@ void nano_analysis(){
  out_legend4->AddEntry(gen_muon_vertex_dxy3, "Scenario B2, m_{#pi}=4 GeV, m_{A}=2.10 GeV, c#tau=10 mm)", "l");
  out_legend4->AddEntry(gen_muon_vertex_dxy4, "Scenario C, m_{#pi}=10 GeV, m_{A}=8.00 GeV, c#tau=10 mm)", "l");
  out_legend4->Draw("Same");
-
+ */
 
 }
